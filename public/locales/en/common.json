@@ -1,0 +1,43 @@
+{
+  "home": {
+    "test":"Test",
+    "home":"Home"
+  },
+  "layoutAndStyle":{
+    "title":"Layout & Style",
+    "movePosition": "Move position",
+    "moveShape": "Move shape"
+  },
+  "connectAPI":{
+    "title":"Connect API"
+  },
+  "formAndTable":{
+    "title":"Form & Table",
+    "form":{
+      "title":"Title",
+      "fullName":"Name",
+      "firstName":"Firstname",
+      "lastName":"Lastname",
+      "birthday":"Birthday",
+      "nationality":"Nationality",
+      "citizenID":"CitizenID",
+      "gender":{
+        "title":"Gender",
+        "male":"Male",
+        "female":"Female",
+        "unsex":"Unsex"
+      },
+      "mobilePhone":"Mobile Phone",
+      "passportNo":"Passport No",
+      "expectedSalary":"Expected Salary",
+      "reset":"RESET",
+      "submit":"SUBMIT",
+      "selectAll":"Select All",
+      "delete":"DELETE",
+      "prev":"PREV",
+      "next":"Next",
+      "manage":"MANAGE",
+      "edit":"EDIT"
+    }
+  }
+}

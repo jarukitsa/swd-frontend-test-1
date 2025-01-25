@@ -1,0 +1,240 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #FFA200;
+  --secondary: #6EDA78;
+  --gray: #868686;
+  --active-button: #ffab00;
+  --green: #72d080;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #FFA200;
+    --secondary: #6EDA78;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+// Layout //
+.main-layout{
+  background: linear-gradient(90deg, var(--secondary),var(--primary));
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+
+  h1{
+    padding:0px;
+    margin: 0px;
+  }
+
+  //HOME
+  .home-screen-layout{
+    .menu-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .card-menu{
+    border-radius: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 300px;
+
+    .title{
+      margin-top: 40px;
+      font-size: 13px;
+    }
+
+  }
+  
+  .layout-screen-layout{
+    .ant-btn {
+      &:hover {
+        background-color: var(--active-button) !important;
+      }
+
+      &:active {
+        background-color: var(--green) !important;
+      }
+    }
+    .arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    
+    .arrow-prev {
+      border-width: 40px 80px 40px 0;
+      border-color: transparent var(--gray) transparent transparent;
+    }
+    
+    .arrow-next {
+      border-width: 40px 0 40px 80px;
+      border-color: transparent transparent transparent var(--gray);
+    }
+    
+    .arrow-up {
+      border-width: 0 40px 80px 40px;
+      border-color: transparent transparent var(--gray) transparent;
+    }
+    
+    .arrow-down {
+      border-width: 80px 40px 0 40px;
+      border-color: var(--gray) transparent transparent transparent;
+    }
+
+    .btn{
+      width: 200px;
+      height: 120px;
+      margin: 5px;
+      padding-left: 60px;
+      padding-right: 60px;
+      position: relative;
+    }
+
+    .btn-expand{
+      width: 400px;
+      height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px;
+      padding-left: 60px;
+      padding-right: 60px;
+      position: relative;
+    }
+
+    .ant-tag{
+      position: absolute;
+      top:100%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .btn-shape{
+      padding:15px;
+      width: 200px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+  }
+
+  .form-screen-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    .form-register-layout{
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+      width:800px;
+    }
+  }
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: var(--gray) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.square {
+    // No additional styles needed; it's already a square.
+  }
+
+  &.ellipse {
+    border-radius: 50%;
+    width: 150px !important;
+    height: 75px;
+  }
+
+  &.trapezoid {
+    width: 150px !important;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+
+  &.rectangle {
+    width: 150px !important;
+    height: 75px;
+  }
+
+  &.parallelogram {
+    width: 150px !important;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+  }
+}
+
+//*Ant Custom*//
+.ant-btn {
+  border: none;
+}
+
+.ant-layout-header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.ant-layout-content {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-select-selector {
+  border-radius: 0px;
+} 
+
+.ant-card-body {
+  padding: 20px;
+}

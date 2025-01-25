@@ -1,0 +1,43 @@
+{
+  "home": {
+    "test":"แบบทดสอบที่",
+    "home":"หน้าหลัก"
+  },
+  "layoutAndStyle":{
+    "title":"การจัดการหน้าเว็บ",
+    "movePosition": "เปลี่ยนตำแหน่ง",
+    "moveShape": "เลื่อนรูปแบบ"
+  },
+  "connectAPI":{
+    "title":"การเชื่อมต่อ API"
+  },
+  "formAndTable":{
+    "title":"การจัดการหน้าฟอร์ม",
+    "form":{
+      "title":"คำนำหน้า",
+      "fullName":"ชื่อ",
+      "firstName":"ชื่อจริง",
+      "lastName":"นามสกุล",
+      "birthday":"วันเกิด",
+      "nationality":"สัญชาติ",
+      "citizenID":"เลขบัตรประชาชน",
+      "gender":{
+        "title":"เพศ",
+        "male":"ผู้ชาย",
+        "female":"ผู้หญิง",
+        "unsex":"ไม่ระบุ"
+      },
+      "mobilePhone":"หมายเลขโทรศัพท์มือถือ",
+      "passportNo":"หนังสือเดินทาง",
+      "expectedSalary":"เงินเดือนที่คาดหวัง",
+      "reset":"ล้างข้อมูล",
+      "submit":"ส่งข้อมูล",
+      "selectAll":"เลือกทั้งหมด",
+      "delete":"ลบ",
+      "prev":"ก่อนหน้า",
+      "next":"ถัดไป",
+      "manage":"จัดการ",
+      "edit":"แก้ไขข้อมูล"
+    }
+  }
+}
